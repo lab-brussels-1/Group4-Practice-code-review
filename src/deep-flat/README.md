@@ -13,15 +13,19 @@ fun to use and nice to read.
 
 ## Implementation
 
-- I found few way to figure out solution: but I use `.flat()` built-in array method.
+- I found few way to figure out solution: but I use `.flat()` built-in array
+  method.
 - The `.flat()` method modifies the nested array into single array.
   [MDN - _in place_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
-- In the `.flat()` method I used `infinity` argument for flat all dimensional array into single array.
-- I wrote `if` statement to throw error. if user pass other type of data it gives an error. 
+- In the `.flat()` method I used `infinity` argument for flat all dimensional
+  array into single array.
+- I wrote `if` statement to throw error. if user pass other type of data it
+  gives an error.
 
 ---
 
 ## Use Cases
+
 This is fat arrow function which I used.
 
 ```js
@@ -31,7 +35,7 @@ const deepFlat = (array = []) => {
     return array.flat(Infinity);
 }
 
-// old methods but its work 
+// old methods but its work
 
 const deepFlat1 = (array) => {
     let flatArray = array.reduce((acc, item) => {
@@ -74,4 +78,5 @@ console.log(returnArr);   // [1,2,3,4,5]
 ## Inspiration
 
 - [This article from flexible.com](https://flexiple.com/flatten-array-javascript/)
-gave me many example to write function in short. it was very helpful for me to find solution.
+  gave me many example to write function in short. it was very helpful for me to
+  find solution.
