@@ -1,6 +1,12 @@
 {
   "language": "en",
-  "words": [],
+  "words": ["coveredstatements","coveredconditionals","coveredmethods",
+    "coveredelements","ncloc","cris","cond","truecount","falsecount",
+  "keyline","cbranch","cstat","fstat","Selecter","linenums","alignof","constexpr",
+"decltype","nullptr","strictfp","sbyte","stackalloc","ulong","ushort","isnt",
+"wantarray","elif","nonlocal","bdsw","nosort","raddevon","sbor","projec","vwell",
+"wireframe","BRDA","FNDA","Coverate","Pellegrini","stackoverflow","Atlassian",
+"lcov","ifndef","ifdef","uage","esac"],
   "ignorePaths": [
     "node_modules/**",
     "package.json",
