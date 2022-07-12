@@ -1,9 +1,4 @@
-//import { deepFlat } from './deep-flat.js';
-
-const deepFlat = (array = []) => {
-  if (array != array) throw new Error('this is not an array');
-  return array.flat(Infinity);
-};
+import { deepFlat } from './deep-flat.js';
 
 // =================== testing pass ====================
 
