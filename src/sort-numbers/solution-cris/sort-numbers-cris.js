@@ -20,7 +20,7 @@
 export const sortingNumbers = (price = []) => {
   //backing up our initial array to avoid any side effects
   const backingUp = [...price];
-  //this function sorts the values inside the array in an ascending order
+  //this function sorts the values inside an array in an ascending order
   backingUp.sort(function (a, b) {
     return a - b;
   });
