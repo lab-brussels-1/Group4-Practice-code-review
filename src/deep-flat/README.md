@@ -31,9 +31,9 @@ This is fat arrow function which I used.
 ```js
 
 const deepFlat = (array = []) => {
-    if(array != array) throw new Error ('this is not an array')
-    return array.flat(Infinity);
-}
+  if (array === !array.isArray) throw new Error('this is not an array');
+  return array.flat(Infinity);
+};
 
 // old methods but its work
 
