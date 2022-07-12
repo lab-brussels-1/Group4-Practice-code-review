@@ -1,4 +1,4 @@
-//import { deepFlat } from './deep-flat.js';
+// import { deepFlat } from './deep-flat.js';
 
 const deepFlat = (array = []) => {
   if (array === !array.isArray) throw new Error('this is not an array');
