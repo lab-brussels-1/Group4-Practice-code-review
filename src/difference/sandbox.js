@@ -5,17 +5,17 @@ console.log(difference([1, 2, 3], [2, 3])); // [1]
 // example testing
 const arr1 = [1, 2, 1];
 const arr2 = [2, 3];
-result = difference(arr1, arr2);
-console.log(result); // [1]
+let difResult = difference(arr1, arr2);
+console.log(difResult); // [1]
 
 const arr3 = [2, 3];
 const arr4 = [4, 5];
-result = difference(arr3, arr4);
+let result = difference(arr3, arr4);
 console.log(result); // [4,5]
 
 // Error testing
 
 const errorArr = [];
 const errorArr1 = [4, 5];
-errorArr = difference(errorArr, errorArr1);
-console.log(errorArr); // throw error
+let ArrResult = difference(errorArr, errorArr1);
+console.log(ArrResult); // throw error
