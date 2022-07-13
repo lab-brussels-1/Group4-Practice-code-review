@@ -14,8 +14,8 @@ describe('sortNumbers sorts an array of numbers', () => {
       expect(received).toEqual(expected);
     });
     it('mixed whole and decimal numbers', () => {
-      const expected = [1, 2, 3.8, 5.4];
-      const received = sortingNumbers([5.4, 2, 3.8, 1]);
+      const expected = [1, 2, 3.8, 5.3];
+      const received = sortingNumbers([5.3, 2, 3.8, 1]);
       expect(received).toEqual(expected);
     });
   });
