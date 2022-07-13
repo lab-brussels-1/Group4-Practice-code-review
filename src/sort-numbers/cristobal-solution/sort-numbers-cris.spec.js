@@ -1,4 +1,4 @@
-import { sortingNumbers } from './sort-numbers-cris.js';
+import { sortingNumbers } from './sort-numbers-crist.js';
 
 // tests
 describe('sortNumbers sorts an array of numbers', () => {
