@@ -7,7 +7,8 @@ remove are provided as a second array argument.
 
 ## Strategy
 
-## I chose to use built-in array (`.filter()`, `.includes()`, `.splice()`) methods with for loop to solve this challenge
+I chose to use built-in array (`.filter()`, `.includes()`, `.splice()`) methods.
+And for loop to solve this challenge.
 
 ## Implementation
 
