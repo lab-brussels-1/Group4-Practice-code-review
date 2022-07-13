@@ -5,31 +5,64 @@ remove are provided as a second array argument.
 
 ---
 
-## Docstring
+## Strategy
 
-Here's a starter docstring for your solutions. Feel free to rewrite it if that
-helps you understand:
+I chose to use built-in array (`.filter()`, `.includes()`, `.splice()`) methods.
+And for loop to solve this challenge.
+
+## Implementation
+
+- I use `.filter()`, `.includes()` built-in array to check difference between
+  two array. and store in new array.
+- Then use `for loop` for checking repeated value and in between I use
+  `.splice()` method to delete repeat value.
+- [I take help from stackoverflow.com](https://stackoverflow.com/questions/40029252/remove-all-repeated-values-in-array-and-leave-the-ones-that-dont-repeat-in-java)
+- [MDN - _in place_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/)
+- I wrote `if` statement to throw error. if user pass other type of data or
+  empty array, throw an error.
+
+---
+
+## Use Cases
+
+This is fat arrow function, which I used.
 
 ```js
-/**
- * Creates an array of values that are in the first array, but not not in the second array.
- *
- * Repeated values are not duplicated in the return value, and the order of result values are determined by the first array.
- *
- * **Note:** This function returns a new array, and has no side-effects.
- *
- * @param {Array} [array=[]] - The array to inspect.
- * @param {Array} [values=[]] - The values to exclude.
- * @returns {Array} Returns the new array of filtered values.
- * @example
- *
- * difference([2, 1], [2, 3]); //  [1]
- *
- * @example
- *
- * difference([1, 2, 1], [2, 3]); //  [1]
- */
+export const difference = (array = [], value = []) => {
+  if (array.length === 0) throw new Error('1st array is empty');
+  if (array === !array.isArray) throw new Error('this is not an array');
+
+  let newArr = array.filter((curEle) => !value.includes(curEle));
+
+  for (let i = 0; i < newArr.length; i++) {
+    if (i !== newArr.lastIndexOf(newArr[i])) newArr.splice(i, 1);
+  }
+  return newArr;
+};
+
+// test cases
+
+const arr1 = [1, 2, 1];
+const arr2 = [2, 3];
+result = difference(arr1, arr2);
+console.log(result); // [1]
+
+const arr3 = [2, 3];
+const arr4 = [4, 5];
+result = difference(arr3, arr4);
+console.log(result); // [4,5]
+
+// Error testing
+
+const errorArr = [];
+const errorArr1 = [4, 5];
+errorArr = difference(errorArr, errorArr1);
+console.log(errorArr); // throw error
 ```
 
-> Docstring is adapted from
-> [lodash's difference](https://github.com/lodash/lodash/blob/4.17.15/lodash.js#L6947)
+---
+
+## Inspiration
+
+- [MDN - _in place_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/)
+  I studied various method for solve this method like. it's very helpful for us.
