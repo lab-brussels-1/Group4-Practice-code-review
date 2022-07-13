@@ -1,4 +1,4 @@
-import { sortingNumbers } from '/Users/home/Group4-Practice-code-review/src/sort-numbers/solution-cris/sort-numbers-cris.js';
+import { sortingNumbers } from './sort-numbers-cris.js';
 
 //** Tests **//
 describe('sortNumbers sorts an array of numbers', () => {
