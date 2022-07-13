@@ -24,6 +24,6 @@ export const sortingNumbers = (price = []) => {
   backingUp.sort(function (a, b) {
     return a - b;
   });
-  // the return function will show our new array already sorted
+  // the return function will show our new array sorted
   return backingUp;
 };
