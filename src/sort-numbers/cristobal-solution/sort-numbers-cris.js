@@ -21,7 +21,7 @@ export const sortingNumbers = (price = []) => {
   // backing up our initial array to avoid any side effects
   const backingUp = [...price];
   // this function sorts the values inside an array in an ascending way
-  backingUp.sort(function (a, b) {
+  backingUp.sort((a, b) => {
     return a - b;
   });
   // the return function will show our new array sorted
