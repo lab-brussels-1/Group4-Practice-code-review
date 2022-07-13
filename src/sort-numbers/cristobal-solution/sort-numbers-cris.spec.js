@@ -1,6 +1,6 @@
 import { sortingNumbers } from './sort-numbers-cris.js';
 
-//** Tests **//
+// tests
 describe('sortNumbers sorts an array of numbers', () => {
   describe('sorts positive numbers', () => {
     it('whole numbers', () => {
