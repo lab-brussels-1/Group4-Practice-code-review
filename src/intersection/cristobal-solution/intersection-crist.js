@@ -19,9 +19,7 @@
  */
 
 export const intersectingArrays = (firstArray = [], secondArray = []) => {
-  const intersectedArrays = firstArray.filter((data) =>
-    secondArray.includes(data),
-  );
+  const intersectedArrays = firstArray.filter((data) => secondArray.includes(data));
   return intersectedArrays;
 };
 intersectingArrays();
