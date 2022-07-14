@@ -35,11 +35,6 @@ for (const solution of [intersectingArrays]) {
           ),
         ).toEqual([-0.1, -0.3, -0.5]);
       });
-      it('', () => {
-        expect(
-          solution([1.23, 2.43, 3.63, 4.1], [1.2, 5.6, 2.43, 1.23, 10.2]),
-        ).toEqual([1.23, 2.43]);
-      });
     });
 
     describe('negative and positive numbers', () => {
