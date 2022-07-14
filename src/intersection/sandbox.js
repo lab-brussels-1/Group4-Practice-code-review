@@ -1,4 +1,4 @@
-import { intersection } from './intersection';
+import { intersection } from './intersection.js';
 
 console.log(intersection([1, 2, 3], [3, 4, 5])); // [3]
 
