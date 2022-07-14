@@ -19,7 +19,12 @@
  */
 
 export const intersectingArrays = (firstArray = [], secondArray = []) => {
-  const intersectedArrays = firstArray.filter((data) => secondArray.includes(data));
+  const intersectedArrays = firstArray.filter(
+    (data) =>
+      // eslint-disable-next-line implicit-arrow-linebreak
+      secondArray.includes(data),
+    // eslint-disable-next-line function-paren-newline
+  );
   return intersectedArrays;
 };
 intersectingArrays();
