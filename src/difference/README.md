@@ -28,16 +28,13 @@ And for loop to solve this challenge.
 This is fat arrow function, which I used.
 
 ```js
-export const difference = (array = [], value = []) => {
+export const difference = (array = [], values = []) => {
   if (array.length === 0) throw new Error('1st array is empty');
   if (array === !array.isArray) throw new Error('this is not an array');
 
-  let newArr = array.filter((curEle) => !value.includes(curEle));
-
-  for (let i = 0; i < newArr.length; i++) {
-    if (i !== newArr.lastIndexOf(newArr[i])) newArr.splice(i, 1);
-  }
-  return newArr;
+  let filterArray = array.filter((curEle) => !values.includes(curEle));
+  filterArray = Array.from(new Set(filterArray));
+  return filterArray;
 };
 
 // test cases
@@ -65,4 +62,4 @@ console.log(errorArr); // throw error
 ## Inspiration
 
 - [MDN - _in place_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/)
-  I studied various method for solve this method like. it's very helpful for us.
+  I studied various method for solve this method. it's very helpful for us.
