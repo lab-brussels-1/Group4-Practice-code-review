@@ -8,23 +8,13 @@
  * @param {number[]} [arrOfNumbers=[]] - The array of numbers to sort.
  * @returns {number[]} A new array with the same numbers, but sorted.
  * @example
- *
- * sortNumbers([1.5, 1, -1.5, 0, -1]);
- * // -> [-1.5, -1, 0, 1, 1.5]
- *
- * @example
- * sortNumbers([-1, 0, 1]);
- * // -> [-1, 0, 1]
- */
-export const sortNumbers = (arrOfNumbers = []) => {
-  // create a copy of the argument to avoid side-effects
-  const copiedAndSorted = [...arrOfNumbers];
+ * * */
 
-  // sort the copy according to
-  copiedAndSorted.sort((a, b) => {
+export const sortNumbers = (arrOfNumbers = []) => {
+  const price = [15, 10.8, 5, 7.6, 18, -1];
+  price.sort((a, b) => {
     return a - b;
   });
-
-  // return the copied & sorted array of numbers
-  return copiedAndSorted;
+  return price;
 };
+sortNumbers();
